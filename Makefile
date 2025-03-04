@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: etamazya <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: etamazya <el.tamazyan03@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/09 14:01:00 by etamazya          #+#    #+#              #
-#    Updated: 2024/02/26 20:12:29 by etamazya         ###   ########.fr        #
+#    Updated: 2025/03/03 14:03:19 by etamazya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ bonus: $(OBJSB)
 	ar -rcs $(NAME) $^
 
 %.o: %.c $(INCS) Makefile
-	$(CC) $(CFLAGS) -I $(INCS) -c $< -o $@
+	 $(CC) $(CFLAGS) -I $(INCS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS) $(OBJSB)
